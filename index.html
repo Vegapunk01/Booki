@@ -12,6 +12,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/279cc54a55.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,33 +20,52 @@
         <!-- Logo et boutons de navigation -->
         <header>
             <div class="banniere">
-                <img src="images/logo/booki.png" title="Booki" alt="logo Booki">
-                <a class="navbutton" href="#">Hébergements</a>
-                <a class="navbutton" href="#">Activités</a>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo/booki.png" title="Booki" alt="logo Booki" height="90%" width="50%"></a>
+                </div>
+                <nav>
+                    <div class="navbuttons">
+                        <a href="index.html#hebergements">Hébergements</a>
+                    </div>
+                    <div class="navbuttons">
+                    <a href="#">Activités</a>
+                    </div>
+                </nav>
+
             </div>
         </header>
         <main>
         <!-- Bouton recherche -->
             <section class="recherche">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-                <div class="researchbutton">
-
+                <div class="soustitre">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve <span class="enplein">En plein centre ville ou en pleine nature</span></h1>
+                </div>
+                <div class="research">
+                    <label for="city-search"><i class="fa-solid fa-location-dot" style="color: black"></i></label>
+                    <div class="rechercher">
+                        <input type="search" id="city-search" name="rechercher" placeholder="ex: Marseille">
+                    </div>
+                    <button>Rechercher</button>
                 </div>
         <!-- Filtres -->
-                <p class="filtres">Filtres</p>
-                <div class="filters">
-                    <div class="economique">Economique</div>
-                    <div class="familial">Familial</div>
-                    <div class="romantique">Romantique</div>
-                    <div class="pepites">Nos pépites</div>
+                <div class="filtres">
+                    <p>Filtres</p>
+                    <a class="economique" href="index.html" ><i class="fa-solid fa-money-bill-wave" style="color: #0065FC;"></i>Économique</a>
+                    <a class="familial" href="index.html"><i class="fa-solid fa-person" style="color: #0065fc;"></i>Familial</a>
+                    <a class="romantique" href="index.html"><i class="fa-solid fa-heart" style="color: #0065fc;"></i>Romantique</a>
+                    <a class="pepites" href="index.html"><i class="fa-solid fa-fire" style="color: #0065fc;"></i>Nos pépites</a>
                 </div>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                <div class="disponible">
+                    <div class="information">
+                        <i class="fa-solid fa-info fa-2xs" style="color: #0065fc"></i>
+                    </div>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
             </section>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                     <div class="hebergements-title">
-                        <h2 class="section-title">Hébergements à Marseille</h2>
+                        <h2 class="section-title" id="hebergements">Hébergements à Marseille</h2>
                     </div>
 
                 </section>
