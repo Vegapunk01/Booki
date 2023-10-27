@@ -19,16 +19,16 @@
     <div class="main-container">
         <!-- Logo et boutons de navigation -->
         <header>
-            <div class="banniere">
+            <div class="banner">
                 <div class="logo">
-                    <a href="index.html"><img src="images/logo/booki.png" title="Booki" alt="logo Booki" height="90%" width="50%"></a>
+                    <a href="index.html"><img src="images/logo/booki.png" title="Booki" alt="logo Booki"></a>
                 </div>
                 <nav>
                     <div class="navbuttons">
                         <a href="index.html#hebergements">Hébergements</a>
                     </div>
                     <div class="navbuttons">
-                    <a href="#">Activités</a>
+                    <a href="index.html#activites">Activités</a>
                     </div>
                 </nav>
 
@@ -36,16 +36,22 @@
         </header>
         <main>
         <!-- Bouton recherche -->
-            <section class="recherche">
-                <div class="soustitre">
-                    <h1>Trouvez votre hébergement pour des vacances de rêve <span class="enplein">En plein centre ville ou en pleine nature</span></h1>
+            <section class="research">
+                <div class="title">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
                 </div>
-                <div class="research">
+                <div class="res">
+                    <div class="icon-city">
                     <label for="city-search"><i class="fa-solid fa-location-dot" style="color: black"></i></label>
-                    <div class="rechercher">
+                    </div>
+                    <div class="res-field">
                         <input type="search" id="city-search" name="rechercher" placeholder="ex: Marseille">
                     </div>
-                    <button>Rechercher</button>
+                    <div class="res-button">
+                    <button class="txt-research">Rechercher</button>
+                    <button class="icon-research"><i class="fa-solid fa-magnifying-glass" style="color: white"></i></button>
+                    </div>
                 </div>
         <!-- Filtres -->
                 <div class="filtres">
@@ -184,6 +190,9 @@
                             </article>
                         </a>
                     </div>
+                    <div class="afficher">
+                        <a href="#">Afficher plus</a>
+                    </div>
                 </section>
         <!-- Les plus populaires -->
                 <section class="populaires">
@@ -252,34 +261,34 @@
                     </div>
                 </section>
             </div>
-            <div class="activites">
+            <div class="activites" >
                 <section class="activites-marseille">
                     <div class="activites-title">
-                        <h2>Activités à Marseille</h2>
+                        <h2 class="section-title" id="activites">Activités à Marseille</h2>
                     </div>
                     <div class="activites-cards">
                         <a href="#">
                             <article class="a-card">
                                 <img src="images/activites/reno-laithienne.jpg" alt="Photo montrant le vieux-port" title="Vieux-Port">
-                                <h3 class="card-title">Vieux-Port</h3>
+                                    <h3 class="card-title">Vieux-Port</h3>
                             </article>
                         </a>
                         <a href="#">
                             <article class="a-card">
                                 <img src="images/activites/paul-hermann.jpg" alt="Photo montrant le fort de pomègues" title="Fort de Pomègues">
-                                <h3 class="card-title">Fort de Pomègues</h3>
+                                    <h3 class="card-title">Fort de Pomègues</h3>
                             </article>
                         </a>
                         <a href="#">
                             <article class="a-card">
                                 <img src="images/activites/kilyan-sockalingum.jpg" alt="Photo montrant le parc national des calanques" title="Parc national des Calanques">
-                                <h3 class="card-title">Parc national des Calanques</h3>
+                                    <h3 class="card-title">Parc national des Calanques</h3>
                             </article>
                         </a>
                         <a href="#">
                             <article class="a-card">
                                 <img src="images/activites/florian-wehde.jpg" alt="Photo montrant Notre-Dame-de-la-Garde" title="Notre-Dame-de-la-Garde">
-                                <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                                    <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
                             </article>
                         </a>
                     </div>
@@ -287,7 +296,7 @@
             </div>
         </main>
         <footer>
-            <nav>
+            <nav class="n-footer">
                 <div class="nav-footer">
                     <div class="nav-footer-title">
                         <h4>A propos</h4>
